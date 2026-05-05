@@ -1,0 +1,40 @@
+@mixin block
+  font-family: Arial, sans-serif
+  background: #eee
+  text-align: center
+
+body
+  width: 95%
+  margin: 0 auto
+
+  h1
+    text-align: center
+
+  nav
+    @include block
+    padding: 25px
+
+    a
+      margin: 10px
+
+  main
+    .info
+      @include block
+      height: 150px
+      margin: 15px 0
+      padding-top: 20px
+
+    .columns
+      display: flex
+      gap: 15px
+
+      div
+        @include block
+        width: 33%
+        height: 150px
+        padding-top: 20px
+
+  footer
+    @include block
+    padding: 25px
+    margin-top: 15px
