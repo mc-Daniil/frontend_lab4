@@ -1,0 +1,50 @@
+.block() {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  text-align: center;
+}
+
+body {
+  width: 95%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    .block();
+    padding: 25px;
+
+    a {
+      margin: 10px;
+    }
+  }
+
+  main {
+    .info {
+      .block();
+      height: 150px;
+      margin: 15px 0;
+      padding-top: 20px;
+    }
+
+    .columns {
+      display: flex;
+      gap: 15px;
+
+      div {
+        .block();
+        width: 33%;
+        height: 150px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  footer {
+    .block();
+    padding: 25px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,9 @@
+.generate-colors(@n) when (@n <= 100) {
+  .n@{n} {
+    color: rgb(@n, 256 - @n, 0);
+  }
+
+  .generate-colors(@n + 1);
+}
+
+.generate-colors(1);
