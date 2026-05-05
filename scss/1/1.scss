@@ -1,0 +1,18 @@
+@use "sass:color";
+
+$main-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: $main-color;
+}
+
+p {
+  color: color.scale($main-color, $lightness: -30%);
+}
